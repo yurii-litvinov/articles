@@ -3,6 +3,10 @@
 \usepackage{minted}
 \usepackage{tabu}
 
+\usepackage{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+
 \useoutertheme{infolines}
 
 \usepackage{fontspec}
@@ -15,6 +19,8 @@
 
 \setbeamercolor*{block title alerted}{fg=red!50!black,bg=red!20}
 \setbeamercolor*{block body alerted}{fg=black,bg=red!10}
+
+\definecolor{cadmiumgreen}{rgb}{0.0, 0.42, 0.24}
 
 \tabulinesep=0.7mm
 
@@ -30,27 +36,43 @@
 	
 	\begin{frame}
 		\frametitle{Educational robotics}
-		\begin{itemize}
-			\item LOGO, 1967
-			\item Lego Mindstorms, 1998, 2009, 2013
-			\item TRIK, 2013
-		\end{itemize}
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{itemize}
+					\item LOGO, 1967
+					\item Lego Mindstorms, 1998, 2009, 2013
+					\item TRIK, 2013
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\center{\includegraphics[width=0.6\textwidth]{logo.png}}
+			\end{column}
+		\end{columns}
+		\vspace{0.7cm}
+		\center{\includegraphics[width=0.2\textwidth]{lego.png}\hspace{2cm}\includegraphics[width=0.3\textwidth]{trik.png}}
 	\end{frame}
 
 	\begin{frame}
 		\frametitle{Existing visual programming tools for robots}
-		\begin{itemize}
-			\item NXT-G, EV3-G
-			\item Robolab
-			\item Scratch
-			\begin{itemize}
-				\item S4A, mBlock, Enchanting, ScratchDuino, Blockly, App Inventor
-			\end{itemize}
-			\item 12Blocks
-			\item Open Roberta
-			\item Ardublock
-			\item ...
-		\end{itemize}
+		\begin{columns}
+			\begin{column}{0.6\textwidth}
+				\begin{itemize}
+					\item NXT-G, EV3-G
+					\item Robolab
+					\item Scratch
+					\begin{itemize}
+						\item S4A, mBlock, Enchanting, ScratchDuino, Blockly, App Inventor
+					\end{itemize}
+					\item 12Blocks
+					\item Open Roberta
+					\item Ardublock
+					\item ...
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.4\textwidth}
+				\center{\includegraphics[width=0.8\textwidth]{robolab.png}}
+			\end{column}
+		\end{columns}
 	\end{frame}
 
 	\begin{frame}
@@ -78,6 +100,7 @@
 
 	\begin{frame}
 		\frametitle{Visual Language}
+		\center{\includegraphics[width=0.9\textwidth]{visualLanguage.png}}
 	\end{frame}
 
 	\begin{frame}
@@ -100,6 +123,9 @@
 				\item code generators, interpreters, version control support, ...
 			\end{itemize}
 		\end{itemize}
+		\begin{textblock}{2}(8,-4)
+			\includegraphics[width=\textwidth]{qrealLogo.png}
+		\end{textblock}
 	\end{frame}
 
 	\begin{frame}
@@ -133,7 +159,7 @@
 
 	\begin{frame}
 		\frametitle{Demo}
-		\center{\Huge{\textcolor{green}{Demonstration}}}
+		\center{\Huge{\textcolor{cadmiumgreen}{Demonstration}}}
 	\end{frame}
 
 \end{document}
